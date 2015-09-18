@@ -93,7 +93,7 @@ namespace TradeSystem.Utility
             textWritter.WriteEndElement();
             document = new XmlDocument();
             document.Load("ignots.xml");
-
+             
             foreach (KeyValuePair<string, TradeSystem.Goods.Ignots> pair in ignotsList)
             {
                 element = document.CreateElement("ignot");
